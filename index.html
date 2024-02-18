@@ -10,8 +10,104 @@
     <title>Bus Ticket Project</title>
 </head>
 <body>
-    
+    <header class="container mx-auto my-8">
+        <div class="navbar ">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destinetion</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-4xl font-extrabold">Green Line - Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destinetion</a></li>
+                <li><a>Search</a></li>
+            </ul>
+                        </div>
+            <div class="navbar-end">
+              <a class="btn text-xl font-bold px-7 bg-green-500 bg-opacity-10">Bus 
+                <img src="images/bus-icon.png" alt="">
+              </a>
+            </div>
+          </div>
+          <!-- Banner section -->
+        <section>
+            <div class="w-full h-[600px] bg-cover rounded-xl bg-center bg-bottom bg-cover-fit flex justify-center items-center" style="background-image: url('images/banner.png')">
+              <div class="text-center">
+                <h1 class="text-6xl font-extrabold text-white">End-to-End Travel with <br> <span class="text-green-600">Green Line Paribahan</span></h1>
+                <p class="text-white text-lg font-normal my-4">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <button class="btn btn-success">Buy Tickets</button>
+              </div>
+            </div>
+        </section>
+    </header>
+    <!-- main section start -->
+    <main class="container mx-auto">
+        <!-- Best offer section -->
+        <section class="text-center flex flex-col justify-center items-center">
+            <div class="my-12 * text-[40px] font-bold"><h1>Best offers for you</h1></div>
 
+            <div class="flex gap-6">
+                <!-- card-1 -->
+                <div  class="bg-yellow-500 flex  items-center gap-40 relative py-12 px-12 rounded-3xl">
+                    <div>
+                        <h1 class="text-4xl font-black">15% OFF</h1>
+                        <h4 class="text-xl font-semibold">on your next purchase</h4>
+                        <p class="text-lg font-medium">use by January 2024</p>  
+                    </div>
+                     <div>
+                        <h1 class="text-3xl font-bold">NEW15</h1>
+                        <p class="text-xl font-medium">Coupon Code<p>
+                    </div>
+                    <div class="absolute right-60 -top-3 "><img class="h-[220px]" src="images/cupon-devider.png" alt=""></div>
+                </div>
+                
+                <!-- card-2 -->
+                <div  class="bg-[#F78C9C] flex items-center gap-40 relative py-12 px-12 rounded-3xl">
+                  <div>
+                      <h1 class="text-4xl font-black">20% OFF</h1>
+                      <h4 class="text-xl font-semibold">on your next purchase</h4>
+                      <p class="text-lg font-medium">use by January 2024</p>  
+                  </div>
+                   <div>
+                      <h1 class="text-3xl font-bold">Couple 20</h1>
+                      <p class="text-xl font-medium">Coupon Code<p>
+                  </div>
+                  <div class="absolute right-60 -top-3 "><img class="h-[220px]" src="images/cupon-devider.png" alt=""></div>
+              </div>
+            </div>
+            <div class="my-12"><button class="btn btn-outline btn-secondary text-green-500">See All Offers</button></div>
+        </section>
+
+        <!-- green Paribahan section start -->
+        <section class="flex flex-col justify-center items-center bg-gray-100 bg-opacity-95 ">
+          <div class="text-center">
+            <h1 class="text-[40px] font-bold">Green Line Paribahan</h1>
+            <p class="text-lg font-normal leading-7 my-6">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
+          </div>
+          <!-- set price -->
+          <article>
+            <div></div>
+            <!-- ------- -->
+            <div></div>
+          </article>
+          
+          <!-- select your set -->
+          <article></article>
+        </section>
+        <!-- green Paribahan section end -->
+    </main>
+    <!-- main section end -->
     <script src="Script/script.js"></script>
 </body>
 </html>
