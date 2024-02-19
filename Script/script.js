@@ -55,7 +55,8 @@ for(const btns of allBtn){
     
 };
 
-function apply() {
+function apply(event) {
+    document.getElementById('coupon-field').classList.add('hidden')
     const inputValue = document.getElementById('inpt-field').value;
     const grndtotal = document.getElementById('grand-total').innerText;
     const convertGrandTotal = parseInt(grndtotal);
@@ -65,11 +66,33 @@ function apply() {
         const comisionp = convertGrandTotal - value;
         document.getElementById('grand-total').innerText = comisionp;
 
+        const discountUl = document.getElementById('discount-ul');
+        const li = document.createElement('li');
+        const p1 = document.createElement('p');
+        p1.innerText = 'Total Discount';
+        const p2 = document.createElement('p');
+        p2.innerText = value;
+
+        li.appendChild(p1);
+        li.appendChild(p2);
+        discountUl.appendChild(li);
+
     }
     else if(inputValue === 'Couple 20'){
         const value = convertGrandTotal * 20 / 100;
         const comisionp = convertGrandTotal - value;
         document.getElementById('grand-total').innerText = comisionp;
+
+        const discountUl = document.getElementById('discount-ul');
+        const li = document.createElement('li');
+        const p1 = document.createElement('p');
+        p1.innerText = 'Total Discount';
+        const p2 = document.createElement('p');
+        p2.innerText = value;
+
+        li.appendChild(p1);
+        li.appendChild(p2);
+        discountUl.appendChild(li);
 
     }
     else{
