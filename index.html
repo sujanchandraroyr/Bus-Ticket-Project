@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Bus Ticket Project</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <header class="container mx-auto my-8">
@@ -46,7 +47,7 @@
               <div class="text-center">
                 <h1 class="text-6xl font-extrabold text-white">End-to-End Travel with <br> <span class="text-green-600">Green Line Paribahan</span></h1>
                 <p class="text-white text-lg font-normal my-4">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                <button class="btn btn-success">Buy Tickets</button>
+                <button id="buyTicket" class="btn btn-success"><a href="#green">Buy Tickets</a></button>
               </div>
             </div>
         </section>
@@ -90,7 +91,7 @@
         </section>
 
         <!-- green Paribahan section start -->
-        <section class=" bg-gray-100 bg-opacity-95 ">
+        <section id="green" class=" bg-gray-100 bg-opacity-95">
           <div class="text-center">
             <h1 class="text-[40px] font-bold">Green Line Paribahan</h1>
             <p class="text-lg font-normal leading-7 my-6">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
@@ -112,7 +113,7 @@
 
                 <div class="flex gap-2 bg-green-500 bg-opacity-15 px-4 py-3 rounded-2xl">
                   <img src="images/seat-green.png" alt="">
-                  <p class="text-green-500 text-lg font-medium"><span>40</span> Seats left</p>
+                  <p class="text-green-500 text-lg font-medium"><span id="setforti">40</span> Seats left</p>
                 </div>
 
               </div>
@@ -211,31 +212,31 @@
                   <!-- parent-1 -->
                   <div class="">
                     <div class="flex flex-col justify-center items-center gap-6">
-                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">A</p> <BUtton class="btn">A1</BUtton> <BUtton class="btn">A2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">B</p> <BUtton class="btn">B1</BUtton> <BUtton class="btn">B2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">C</p> <BUtton class="btn">C1</BUtton> <BUtton class="btn">C2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">D</p> <BUtton class="btn">D1</BUtton> <BUtton class="btn">D2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">E</p> <BUtton class="btn">E1</BUtton> <BUtton class="btn">E2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">F</p> <BUtton class="btn">F1</BUtton> <BUtton class="btn">F2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">G</p> <BUtton class="btn">G1</BUtton> <BUtton class="btn">G2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">H</p> <BUtton class="btn">H1</BUtton> <BUtton class="btn">H2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">I</p> <BUtton class="btn">I1</BUtton> <BUtton class="btn">I1</BUtton> </Div>
-                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">J</p> <BUtton class="btn">J1</BUtton> <BUtton class="btn">J2</BUtton> </Div>
+                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">A</p> <BUtton id="buton" class="btn">A1</BUtton> <BUtton id="buton" class="btn">A2</BUtton> </Div>
+                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">B</p> <BUtton id="buton" class="btn">B1</BUtton> <BUtton id="buton" class="btn">B2</BUtton> </Div>
+                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">C</p> <BUtton id="buton" class="btn">C1</BUtton> <BUtton id="buton" class="btn">C2</BUtton> </Div>
+                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">D</p> <BUtton id="buton" class="btn">D1</BUtton> <BUtton id="buton" class="btn">D2</BUtton> </Div>
+                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">E</p> <BUtton id="buton" class="btn">E1</BUtton> <BUtton id="buton" class="btn">E2</BUtton> </Div>
+                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">F</p> <BUtton id="buton" class="btn">F1</BUtton> <BUtton id="buton" class="btn">F2</BUtton> </Div>
+                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">G</p> <BUtton id="buton" class="btn">G1</BUtton> <BUtton id="buton" class="btn">G2</BUtton> </Div>
+                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">H</p> <BUtton id="buton" class="btn">H1</BUtton> <BUtton id="buton" class="btn">H2</BUtton> </Div>
+                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">I</p> <BUtton id="buton" class="btn">I1</BUtton> <BUtton id="buton" class="btn">I1</BUtton> </Div>
+                     <Div class="flex gap-8 items-center"> <p class="text-lg font-medium">J</p> <BUtton id="buton" class="btn">J1</BUtton> <BUtton id="buton" class="btn">J2</BUtton> </Div>
                   
                     </div>
                     </div>
                   <!-- parent-2 -->
                   <div class="flex flex-col justify-center items-center gap-6">
-                    <Div class="flex gap-8 items-center">   <BUtton class="btn">A1</BUtton> <BUtton class="btn">A2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center">  <BUtton class="btn">B1</BUtton> <BUtton class="btn">B2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center">  <BUtton class="btn">C1</BUtton> <BUtton class="btn">C2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center">  <BUtton class="btn">D1</BUtton> <BUtton class="btn">D2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center">  <BUtton class="btn">E1</BUtton> <BUtton class="btn">E2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center">  <BUtton class="btn">F1</BUtton> <BUtton class="btn">F2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center">  <BUtton class="btn">G1</BUtton> <BUtton class="btn">G2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center">  <BUtton class="btn">H1</BUtton> <BUtton class="btn">H2</BUtton> </Div>
-                     <Div class="flex gap-8 items-center">  <BUtton class="btn">I1</BUtton> <BUtton class="btn">I1</BUtton> </Div>
-                     <Div class="flex gap-8 items-center">  <BUtton class="btn">J1</BUtton> <BUtton class="btn">J2</BUtton> </Div>
+                    <Div class="flex gap-8 items-center">   <BUtton id="buton" class="btn">A3</BUtton> <BUtton id="buton" class="btn">A4</BUtton> </Div>
+                     <Div class="flex gap-8 items-center">  <BUtton id="buton" class="btn">B3</BUtton> <BUtton id="buton" class="btn">B4</BUtton> </Div>
+                     <Div class="flex gap-8 items-center">  <BUtton id="buton" class="btn">C3</BUtton> <BUtton id="buton" class="btn">C4</BUtton> </Div>
+                     <Div class="flex gap-8 items-center">  <BUtton id="buton" class="btn">D3</BUtton> <BUtton id="buton" class="btn">D4</BUtton> </Div>
+                     <Div class="flex gap-8 items-center">  <BUtton id="buton" class="btn">E3</BUtton> <BUtton id="buton" class="btn">E4</BUtton> </Div>
+                     <Div class="flex gap-8 items-center">  <BUtton id="buton" class="btn">F3</BUtton> <BUtton id="buton" class="btn">F4</BUtton> </Div>
+                     <Div class="flex gap-8 items-center">  <BUtton id="buton" class="btn">G3</BUtton> <BUtton id="buton" class="btn">G4</BUtton> </Div>
+                     <Div class="flex gap-8 items-center">  <BUtton id="buton" class="btn">H3</BUtton> <BUtton id="buton" class="btn">H4</BUtton> </Div>
+                     <Div class="flex gap-8 items-center">  <BUtton id="buton" class="btn">I3</BUtton> <BUtton id="buton" class="btn">I4</BUtton> </Div>
+                     <Div class="flex gap-8 items-center">  <BUtton id="buton" class="btn">J3</BUtton> <BUtton id="buton" class="btn">J4</BUtton> </Div>
                     </div>
                   </div>
                 </div>
@@ -246,26 +247,19 @@
             <!-- container div -->
             <div class="bg-gray-100 p-8 rounded-2xl">
               <div class="flex justify-between my-4">
-                <p class="text-base font-medium">Seat <sup><span class="bg-green-500 px-2 py-1 text-xs font-bold rounded-lg">2</span></sup> </p>
+                <p class="text-base font-medium">Seat <sup><span id="set" class="bg-green-500 px-2 py-1 text-xs font-bold rounded-lg">0</span></sup> </p>
                 <p class="text-base font-medium">Class</p>
                 <p class="text-base font-medium">Price</p>
               </div> <hr>
 
-              <div class="flex justify-between my-4">
-                <p class="text-base text-gray-900 text-opacity-60">C2</p>
-                <p class="text-base text-gray-900 text-opacity-60">Economoy</p>
-                <p class="text-base text-gray-900 text-opacity-60">550</p>
-              </div>
+              <ul id="li-container">
+                
+              </ul>
 
-              <div class="flex justify-between my-4">
-                <p class="text-base text-gray-900 text-opacity-60">C2</p>
-                <p class="text-base text-gray-900 text-opacity-60">Economoy</p>
-                <p class="text-base text-gray-900 text-opacity-60">550</p>
-              </div> <hr>
-
+              <hr>
               <div class="flex justify-between my-4">
                 <p class="text-base font-medium">TotalPrice</p>
-                <p class="text-base font-medium">BDT <span>1100</span></p>
+                <p class="text-base font-medium">BDT <span id="total-rice">0</span></p>
               </div>
 
               <div class="relative">
@@ -275,7 +269,7 @@
 
               <div class="flex justify-between my-4">
                 <p class="text-base font-medium">GrandTotal</p>
-                <p class="text-base font-medium">BDT <span>1100</span></p>
+                <p class="text-base font-medium">BDT <span id="grand-total">1100</span></p>
               </div>
 
             </div>
